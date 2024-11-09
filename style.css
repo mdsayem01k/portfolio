@@ -430,3 +430,69 @@ footer {
 footer p {
   text-align: center;
 }
+
+
+
+/* Progress bar */
+
+.skills-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.skills-section {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.skills-section h2 {
+  color: #333;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #ddd;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.skill-bar {
+  width: 100%;
+  height: 10px;
+  background-color: #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  border-radius: 5px;
+  transition: width 1s ease-in-out;
+}
+
+/* Skill levels with different colors for each category */
+.frontend { background-color: #4CAF50; }
+.backend { background-color: #2196F3; }
+.data { background-color: #9C27B0; }
+
+.experienced { width: 90%; }
+.intermediate { width: 70%; }
+.basic { width: 45%; }
